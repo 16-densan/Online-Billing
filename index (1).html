@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>デジタル資産ファイル作成に関する調査書（DA-2025-0921-001）</title>
+  <style>
+    :root{--bg:#f6f8fb;--card:#ffffff;--accent:#0b63d6;--muted:#6b7280;--border:#e6e9ef}
+    html,body{height:100%;margin:0;font-family:system-ui,-apple-system,Segoe UI,Roboto,Helvetica,Arial,"Noto Sans JP",sans-serif;background:var(--bg);color:#0f172a}
+    .wrap{max-width:900px;margin:36px auto;padding:24px}
+    .card{background:var(--card);border:1px solid var(--border);border-radius:10px;padding:24px;box-shadow:0 6px 18px rgba(11,99,214,0.04)}
+    h1{margin:0 0 6px;font-size:20px}
+    p.lead{margin:0 0 18px;color:var(--muted)}
+    fieldset{border:1px solid var(--border);padding:16px;border-radius:8px;margin-bottom:16px}
+    legend{font-weight:700;padding:0 8px}
+    label{display:block;margin-bottom:8px}
+    .grid{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+    .full{grid-column:1 / -1}
+    input[type=text], input[type=date], input[type=email], textarea, select{width:100%;padding:10px;border:1px solid var(--border);border-radius:6px;font-size:14px}
+    textarea{min-height:100px;resize:vertical}
+    .checkboxes label{display:inline-block;margin-right:12px}
+    .actions{display:flex;gap:12px;justify-content:flex-end;margin-top:12px}
+    button{background:var(--accent);color:#fff;border:0;padding:10px 16px;border-radius:8px;cursor:pointer}
+    .muted{color:var(--muted);font-size:13px}
+    .footer{font-size:13px;color:var(--muted);margin-top:18px}
+    @media (max-width:640px){.grid{grid-template-columns:1fr}.actions{justify-content:stretch}}
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <div class="card">
+      <h1>デジタル資産ファイル作成に関する調査書</h1>
+      <p class="lead">ファイル番号：DA-2025-0921-001　｜　所有者：近藤敬子</p>
+
+      <form id="daForm">
+        <fieldset>
+          <legend>目的</legend>
+          <p class="muted">本調査書は、顧客／利用者のデジタル資産（特にステーブルコイン USDT）の利用および認識に関する実態を把握し、コンプライアンスリスク評価に使用するための資料です。</p>
+        </fieldset>
+
+        <!-- 以下省略、既に提供されたHTMLコードの本文を使用 -->
+      </form>
+
+    </div>
+  </div>
+
+  <script>
+    document.getElementById('daForm').addEventListener('submit', function(e){
+      e.preventDefault();
+      alert('フォームが保存されました。ブラウザの「印刷」機能を使ってPDF出力してください。');
+    });
+  </script>
+</body>
+</html>
